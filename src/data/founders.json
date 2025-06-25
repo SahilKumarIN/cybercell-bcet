@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Hrithik Kumar",
+        "designation": "Founder",
+        "imgUrl": "https://wcsjbrxoyojqrpjcwwpg.supabase.co/storage/v1/object/public/cybercell-bucket/images/founder.jpeg"
+    },
+    {
+        "name": "Vatsal Vinit",
+        "designation": "Co-Founder",
+        "imgUrl": "https://wcsjbrxoyojqrpjcwwpg.supabase.co/storage/v1/object/public/cybercell-bucket/images/co-founder.jpeg"
+    }
+]

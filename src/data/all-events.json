@@ -1,0 +1,17 @@
+[
+    {
+        "month": "",
+        "day":"",
+        "year": "",
+        "name": "",
+        "description": "",
+        "location": "",
+        "attendeesCount": "",
+        "time": "",
+        "eventTags":[""],
+        "link": "",
+        "knowMoreLink": "",
+        "isFeatured": true,
+        "isUpcoming": true
+    }
+]

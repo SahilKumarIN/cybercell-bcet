@@ -1,0 +1,740 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Blog - CyberCell BCET"
+  description="Read the latest cybersecurity articles, research insights, and technical tutorials from CyberCell BCET members."
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">CyberCell Blog</h1>
+          <p class="hero-subtitle">
+            Insights, tutorials, and research from our cybersecurity community
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section">
+      <div class="container">
+        <div class="featured-article card">
+          <div class="featured-badge">Featured Article</div>
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="category">Research</span>
+              <span class="date">December 10, 2024</span>
+              <span class="read-time">8 min read</span>
+            </div>
+            <h2>
+              The Future of AI in Cybersecurity: Opportunities and Challenges
+            </h2>
+            <p class="article-excerpt">
+              Exploring how artificial intelligence is revolutionizing
+              cybersecurity defense mechanisms while introducing new attack
+              vectors. This comprehensive analysis covers machine learning
+              applications in threat detection, automated incident response, and
+              the emerging challenges of adversarial AI attacks.
+            </p>
+            <div class="article-author">
+              <img
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+                alt="Author"
+                class="author-avatar"
+              />
+              <div class="author-info">
+                <span class="author-name">Arjun Sharma</span>
+                <span class="author-role">President, CyberCell BCET</span>
+              </div>
+            </div>
+            <div class="article-tags">
+              <span class="tag">AI Security</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Threat Detection</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+          <div class="article-actions">
+            <button class="btn btn-primary">Read Full Article</button>
+            <button class="btn btn-ghost">Share</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="categories-section">
+      <div class="container">
+        <div class="categories-grid">
+          <div class="category-card card">
+            <div class="category-icon">🔬</div>
+            <h3>Research</h3>
+            <p>Latest cybersecurity research and findings</p>
+            <span class="post-count">12 articles</span>
+          </div>
+
+          <div class="category-card card">
+            <div class="category-icon">📚</div>
+            <h3>Tutorials</h3>
+            <p>Step-by-step guides and how-to articles</p>
+            <span class="post-count">18 articles</span>
+          </div>
+
+          <div class="category-card card">
+            <div class="category-icon">🛡️</div>
+            <h3>Security Tools</h3>
+            <p>Reviews and guides for security tools</p>
+            <span class="post-count">8 articles</span>
+          </div>
+
+          <div class="category-card card">
+            <div class="category-icon">🎯</div>
+            <h3>CTF Writeups</h3>
+            <p>Detailed solutions to CTF challenges</p>
+            <span class="post-count">15 articles</span>
+          </div>
+
+          <div class="category-card card">
+            <div class="category-icon">📰</div>
+            <h3>News & Updates</h3>
+            <p>Latest cybersecurity news and trends</p>
+            <span class="post-count">25 articles</span>
+          </div>
+
+          <div class="category-card card">
+            <div class="category-icon">💼</div>
+            <h3>Career Guidance</h3>
+            <p>Tips for cybersecurity career development</p>
+            <span class="post-count">6 articles</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Recent Articles</h2>
+          <p class="section-subtitle">Stay updated with our latest posts</p>
+        </div>
+
+        <div class="articles-grid">
+          <article class="article-card card">
+            <div class="article-image">
+              <img
+                src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                alt="Web Security"
+              />
+              <div class="article-category">Tutorial</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="date">Dec 8, 2024</span>
+                <span class="read-time">5 min read</span>
+              </div>
+              <h3>Complete Guide to Web Application Security Testing</h3>
+              <p>
+                Learn how to perform comprehensive security testing on web
+                applications using both automated tools and manual techniques.
+              </p>
+              <div class="article-author">
+                <img
+                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                  alt="Author"
+                  class="author-avatar small"
+                />
+                <span class="author-name">Priya Patel</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card card">
+            <div class="article-image">
+              <img
+                src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                alt="Network Security"
+              />
+              <div class="article-category">Research</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="date">Dec 5, 2024</span>
+                <span class="read-time">7 min read</span>
+              </div>
+              <h3>Advanced Persistent Threats: Detection and Mitigation</h3>
+              <p>
+                Understanding APT attack patterns and implementing effective
+                detection mechanisms to protect organizational assets.
+              </p>
+              <div class="article-author">
+                <img
+                  src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                  alt="Author"
+                  class="author-avatar small"
+                />
+                <span class="author-name">Rohit Kumar</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card card">
+            <div class="article-image">
+              <img
+                src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                alt="Cryptography"
+              />
+              <div class="article-category">Tutorial</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="date">Dec 3, 2024</span>
+                <span class="read-time">6 min read</span>
+              </div>
+              <h3>Modern Cryptography: From RSA to Post-Quantum</h3>
+              <p>
+                Exploring the evolution of cryptographic algorithms and
+                preparing for the post-quantum cryptography era.
+              </p>
+              <div class="article-author">
+                <img
+                  src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                  alt="Author"
+                  class="author-avatar small"
+                />
+                <span class="author-name">Neha Singh</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card card">
+            <div class="article-image">
+              <img
+                src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                alt="Mobile Security"
+              />
+              <div class="article-category">Security Tools</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="date">Nov 30, 2024</span>
+                <span class="read-time">4 min read</span>
+              </div>
+              <h3>Top 10 Mobile Security Testing Tools in 2024</h3>
+              <p>
+                Comprehensive review of the best tools for testing mobile
+                application security across iOS and Android platforms.
+              </p>
+              <div class="article-author">
+                <img
+                  src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                  alt="Author"
+                  class="author-avatar small"
+                />
+                <span class="author-name">Pooja Verma</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card card">
+            <div class="article-image">
+              <img
+                src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                alt="CTF"
+              />
+              <div class="article-category">CTF Writeup</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="date">Nov 28, 2024</span>
+                <span class="read-time">10 min read</span>
+              </div>
+              <h3>PicoCTF 2024: Web Exploitation Challenges Walkthrough</h3>
+              <p>
+                Detailed solutions and explanations for the web exploitation
+                challenges from PicoCTF 2024 competition.
+              </p>
+              <div class="article-author">
+                <img
+                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                  alt="Author"
+                  class="author-avatar small"
+                />
+                <span class="author-name">Amit Patel</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card card">
+            <div class="article-image">
+              <img
+                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                alt="Cloud Security"
+              />
+              <div class="article-category">News & Updates</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="date">Nov 25, 2024</span>
+                <span class="read-time">3 min read</span>
+              </div>
+              <h3>Major Cloud Security Trends to Watch in 2025</h3>
+              <p>
+                Analysis of emerging cloud security trends and their
+                implications for enterprise security strategies.
+              </p>
+              <div class="article-author">
+                <img
+                  src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                  alt="Author"
+                  class="author-avatar small"
+                />
+                <span class="author-name">Rahul Jain</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="load-more">
+          <button class="btn btn-secondary">Load More Articles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="section newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>
+            Subscribe to our newsletter to get the latest cybersecurity articles
+            and insights delivered to your inbox
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note">
+            Join 500+ cybersecurity enthusiasts who read our weekly newsletter
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .hero-section {
+    padding: 120px 0 80px;
+    background: var(--gradient-bg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 212, 255, 0.1) 0%,
+      transparent 70%
+    );
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-6);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .featured-article {
+    padding: var(--space-8);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--space-2) var(--space-6);
+    border-bottom-left-radius: var(--radius-xl);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .article-meta {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .category {
+    background: var(--gradient-accent);
+    color: var(--bg-primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .date,
+  .read-time {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
+
+  .featured-article h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+    line-height: 1.2;
+  }
+
+  .article-excerpt {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-6);
+    color: var(--text-secondary);
+  }
+
+  .article-author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+  }
+
+  .author-avatar.small {
+    width: 30px;
+    height: 30px;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+  }
+
+  .author-role {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+  }
+
+  .article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .tag {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+  }
+
+  .article-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .categories-section {
+    padding: var(--space-16) 0;
+    background: var(--bg-secondary);
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .category-card {
+    padding: var(--space-6);
+    text-align: center;
+    transition: all var(--transition-normal);
+  }
+
+  .category-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+  }
+
+  .category-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .category-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+  }
+
+  .category-card p {
+    margin-bottom: var(--space-4);
+    color: var(--text-secondary);
+  }
+
+  .post-count {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-6);
+    margin-bottom: var(--space-12);
+  }
+
+  .article-card {
+    padding: 0;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .article-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .article-card:hover .article-image img {
+    transform: scale(1.05);
+  }
+
+  .article-category {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .article-card .article-content {
+    padding: var(--space-6);
+  }
+
+  .article-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+    line-height: 1.3;
+  }
+
+  .article-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+
+  .load-more {
+    text-align: center;
+  }
+
+  .newsletter-section {
+    background: var(--gradient-primary);
+    color: white;
+  }
+
+  .newsletter-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .newsletter-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+    color: white;
+  }
+
+  .newsletter-content > p {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-8);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: var(--space-4);
+    max-width: 400px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .newsletter-form input {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    border: none;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .newsletter-form input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .newsletter-form .btn {
+    background: white;
+    color: var(--primary);
+    border: none;
+  }
+
+  .newsletter-form .btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary);
+  }
+
+  .newsletter-note {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 1024px) {
+    .featured-article {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .articles-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter-form {
+      flex-direction: column;
+    }
+
+    .featured-article h2 {
+      font-size: 2rem;
+    }
+
+    .article-meta {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Newsletter form submission
+    const newsletterForm = document.querySelector(".newsletter-form");
+    newsletterForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = e.target.querySelector('input[type="email"]').value;
+      alert(`Thank you for subscribing with email: ${email}`);
+      e.target.reset();
+    });
+
+    // Load more articles
+    const loadMoreBtn = document.querySelector(".load-more .btn");
+    loadMoreBtn?.addEventListener("click", () => {
+      // Simulate loading more articles
+      loadMoreBtn.textContent = "Loading...";
+      setTimeout(() => {
+        loadMoreBtn.textContent = "Load More Articles";
+        alert("More articles loaded!");
+      }, 1000);
+    });
+  });
+</script>

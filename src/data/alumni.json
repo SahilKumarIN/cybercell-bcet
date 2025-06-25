@@ -1,0 +1,34 @@
+{
+    "2025": [
+        {
+            "name": "Harsh Thakur",
+            "department": "B.Tech IT",
+            "imgUrl" :"",
+            "isLeadRole": true,
+            "leadRole": "SCO 2025"
+        },
+        {
+            "name": "Anish Jaiswal",
+            "department": "B.Tech CSE",
+            "imgUrl": "",
+            "isLeadRole": false,
+            "leadRole": ""
+        },
+        {
+            "name": "Anshu Raj",
+            "department": "B.Tech CSE",
+            "imgUrl": "",
+            "isLeadRole": false,
+            "leadRole": ""
+        }
+    ],
+    "2024": [
+        {
+            "name": "Diwakar Kumar",
+            "department": "B.Tech CSE",
+            "imgUrl": "",
+            "leadRole": "SCO 2024",
+            "isLeadRole": true
+        }
+    ]
+}

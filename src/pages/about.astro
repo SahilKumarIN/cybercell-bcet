@@ -1,0 +1,494 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About Us - CyberCell BCET" description="Learn about CyberCell BCET's mission, vision, and commitment to cybersecurity education and innovation.">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">About CyberCell BCET</h1>
+          <p class="hero-subtitle">
+            Pioneering cybersecurity education and fostering the next generation of digital defenders
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section">
+      <div class="container">
+        <div class="mission-vision-grid">
+          <div class="mission-card card">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M24 4L30 18H44L34 28L38 42L24 34L10 42L14 28L4 18H18L24 4Z" 
+                      fill="url(#mission-gradient)" stroke="currentColor" stroke-width="2"/>
+                <defs>
+                  <linearGradient id="mission-gradient" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="var(--primary)" />
+                    <stop offset="1" stop-color="var(--secondary)" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              To create a vibrant community of cybersecurity enthusiasts who are passionate 
+              about protecting digital assets and building secure systems for the future. We 
+              strive to bridge the gap between academic learning and industry requirements.
+            </p>
+          </div>
+          
+          <div class="vision-card card">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="none" stroke="url(#vision-gradient)" stroke-width="2"/>
+                <circle cx="24" cy="24" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="24" cy="24" r="4" fill="var(--accent)"/>
+                <defs>
+                  <linearGradient id="vision-gradient" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="var(--accent)" />
+                    <stop offset="1" stop-color="var(--primary)" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Our Vision</h3>
+            <p>
+              To be the leading technical club that shapes the next generation of cybersecurity 
+              professionals through hands-on experience, cutting-edge research, and industry 
+              collaboration, making BCET a hub for cybersecurity excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What We Do</h2>
+          <p class="section-subtitle">
+            Comprehensive cybersecurity education through diverse activities and programs
+          </p>
+        </div>
+        
+        <div class="activities-grid">
+          <div class="activity-card card">
+            <div class="activity-icon">🛡️</div>
+            <h4>Security Research</h4>
+            <p>Conducting cutting-edge research in emerging cybersecurity domains including AI security, IoT vulnerabilities, and blockchain security.</p>
+            <ul class="activity-features">
+              <li>Vulnerability Research</li>
+              <li>Threat Intelligence</li>
+              <li>Security Tool Development</li>
+            </ul>
+          </div>
+          
+          <div class="activity-card card">
+            <div class="activity-icon">🎯</div>
+            <h4>Skill Development</h4>
+            <p>Regular workshops and training sessions on the latest security tools, techniques, and industry best practices.</p>
+            <ul class="activity-features">
+              <li>Hands-on Workshops</li>
+              <li>Certification Guidance</li>
+              <li>Industry Mentorship</li>
+            </ul>
+          </div>
+          
+          <div class="activity-card card">
+            <div class="activity-icon">🏆</div>
+            <h4>CTF Competitions</h4>
+            <p>Participating in national and international Capture The Flag challenges to test and improve practical skills.</p>
+            <ul class="activity-features">
+              <li>Team Competitions</li>
+              <li>Individual Challenges</li>
+              <li>Custom CTF Events</li>
+            </ul>
+          </div>
+          
+          <div class="activity-card card">
+            <div class="activity-icon">🤝</div>
+            <h4>Industry Connect</h4>
+            <p>Building strong connections with cybersecurity professionals and industry leaders for knowledge exchange.</p>
+            <ul class="activity-features">
+              <li>Guest Lectures</li>
+              <li>Industry Visits</li>
+              <li>Internship Programs</li>
+            </ul>
+          </div>
+          
+          <div class="activity-card card">
+            <div class="activity-icon">📚</div>
+            <h4>Knowledge Sharing</h4>
+            <p>Regular seminars, tech talks, and knowledge sharing sessions to keep up with the latest trends.</p>
+            <ul class="activity-features">
+              <li>Technical Seminars</li>
+              <li>Research Papers</li>
+              <li>Blog Publications</li>
+            </ul>
+          </div>
+          
+          <div class="activity-card card">
+            <div class="activity-icon">🚀</div>
+            <h4>Innovation Hub</h4>
+            <p>Developing innovative security solutions and contributing to open-source cybersecurity projects.</p>
+            <ul class="activity-features">
+              <li>Open Source Projects</li>
+              <li>Security Tools</li>
+              <li>Innovation Challenges</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="section values-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Core Values</h2>
+          <p class="section-subtitle">
+            The principles that guide everything we do
+          </p>
+        </div>
+        
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-number">01</div>
+            <h4>Excellence</h4>
+            <p>We strive for excellence in everything we do, from learning to teaching, from research to implementation.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-number">02</div>
+            <h4>Innovation</h4>
+            <p>We embrace new technologies and methodologies, constantly pushing the boundaries of cybersecurity.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-number">03</div>
+            <h4>Collaboration</h4>
+            <p>We believe in the power of teamwork and knowledge sharing to achieve greater cybersecurity goals.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-number">04</div>
+            <h4>Ethics</h4>
+            <p>We maintain the highest ethical standards in all our cybersecurity practices and research.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-number">05</div>
+            <h4>Inclusivity</h4>
+            <p>We welcome everyone regardless of their background, fostering a diverse and inclusive community.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-number">06</div>
+            <h4>Impact</h4>
+            <p>We focus on creating meaningful impact in the cybersecurity field and society at large.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card card">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Active Members</div>
+            <div class="stat-description">Passionate cybersecurity enthusiasts</div>
+          </div>
+          
+          <div class="stat-card card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Events Conducted</div>
+            <div class="stat-description">Workshops, seminars, and competitions</div>
+          </div>
+          
+          <div class="stat-card card">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Research Projects</div>
+            <div class="stat-description">Ongoing cybersecurity research</div>
+          </div>
+          
+          <div class="stat-card card">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Industry Partners</div>
+            <div class="stat-description">Collaborating organizations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Us CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Join Our Mission?</h2>
+          <p>Be part of the cybersecurity revolution and help us build a safer digital future.</p>
+          <div class="cta-actions">
+            <a href="/join" class="btn btn-primary">Join CyberCell BCET</a>
+            <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .hero-section {
+    padding: 120px 0 80px;
+    background: var(--gradient-bg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-6);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    margin-bottom: var(--space-16);
+  }
+
+  .mission-card, .vision-card {
+    text-align: center;
+    padding: var(--space-8);
+  }
+
+  .card-icon {
+    margin-bottom: var(--space-6);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+  }
+
+  .mission-card h3, .vision-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+  }
+
+  .mission-card p, .vision-card p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .activity-card {
+    padding: var(--space-6);
+    text-align: center;
+  }
+
+  .activity-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .activity-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+  }
+
+  .activity-card p {
+    margin-bottom: var(--space-4);
+    line-height: 1.6;
+  }
+
+  .activity-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .activity-features li {
+    color: var(--primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: var(--space-4);
+  }
+
+  .activity-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .values-section {
+    background: var(--bg-secondary);
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+  }
+
+  .value-item {
+    text-align: center;
+    padding: var(--space-6);
+  }
+
+  .value-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .value-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+  }
+
+  .value-item p {
+    line-height: 1.6;
+  }
+
+  .stats-section {
+    background: var(--gradient-primary);
+    color: white;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: var(--space-8);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: var(--space-2);
+  }
+
+  .stat-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: var(--space-2);
+  }
+
+  .stat-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+  }
+
+  .cta-section {
+    background: var(--bg-secondary);
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+  }
+
+  .cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-8);
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .mission-vision-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .activities-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

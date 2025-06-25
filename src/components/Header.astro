@@ -1,0 +1,332 @@
+---
+
+---
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <img
+            src="/cybercell_bcet_logo.jpg"
+            alt="CyberCell BCET Logo"
+            width={64}
+            height={64}
+            style="border-radius: 10px;"
+          />
+        </div>
+        <span class="logo-text"
+          >CyberCell<span class="logo-accent">BCET</span></span
+        >
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/events" class="nav-link">Events</a></li>
+        <li><a href="/team" class="nav-link">Team</a></li>
+        <li><a href="/alumni" class="nav-link">Alumni</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="/#contact" class="btn btn-primary">Join Us</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="/" class="mobile-link">Home</a>
+      <a href="/about" class="mobile-link">About</a>
+      <a href="/events" class="mobile-link">Events</a>
+      <a href="/team" class="mobile-link">Team</a>
+      <a href="/alumni" class="mobile-link">Alumni</a>
+      <a href="/contact" class="mobile-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-primary);
+    transition: all var(--transition-normal);
+  }
+
+  .header.scrolled {
+    background: rgba(10, 10, 15, 0.95);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: transform var(--transition-fast);
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
+  .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .logo-accent {
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: var(--space-8);
+  }
+
+  .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all var(--transition-fast);
+    position: relative;
+    padding: var(--space-2) 0;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: width var(--transition-normal);
+  }
+
+  .nav-link:hover {
+    color: var(--primary);
+    transform: translateY(-1px);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .mobile-menu-btn.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .mobile-menu-btn.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-btn.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 15, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-primary);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 999;
+  }
+
+  .mobile-menu.active {
+    max-height: 500px;
+  }
+
+  .mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-6);
+    gap: var(--space-4);
+  }
+
+  .mobile-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--border-secondary);
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+
+  .mobile-link:hover {
+    color: var(--primary);
+    padding-left: var(--space-4);
+  }
+
+  .mobile-cta {
+    margin-top: var(--space-4);
+    align-self: flex-start;
+  }
+
+  @media (max-width: 1024px) {
+    .nav-links {
+      gap: var(--space-6);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links,
+    .nav-actions {
+      display: none;
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+  // Wait for DOM to be fully loaded
+  window.addEventListener("load", function () {
+    console.log("Header script loaded"); // Debug log
+
+    const header = document.querySelector(".header");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    console.log("Elements found:", { header, mobileMenuBtn, mobileMenu }); // Debug log
+
+    // Header scroll effect
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        header?.classList.add("scrolled");
+      } else {
+        header?.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile menu toggle
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        console.log("Mobile menu button clicked"); // Debug log
+
+        const isActive = mobileMenuBtn.classList.contains("active");
+
+        if (isActive) {
+          mobileMenuBtn.classList.remove("active");
+          mobileMenu.classList.remove("active");
+          console.log("Menu closed"); // Debug log
+        } else {
+          mobileMenuBtn.classList.add("active");
+          mobileMenu.classList.add("active");
+          console.log("Menu opened"); // Debug log
+        }
+      });
+    }
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = document.querySelectorAll(".mobile-link, .mobile-cta");
+    mobileLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        console.log("Mobile link clicked"); // Debug log
+        mobileMenuBtn?.classList.remove("active");
+        mobileMenu?.classList.remove("active");
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", function (e) {
+      if (mobileMenu && mobileMenuBtn) {
+        const isClickInsideMenu = mobileMenu.contains(e.target);
+        const isClickOnButton = mobileMenuBtn.contains(e.target);
+
+        if (
+          !isClickInsideMenu &&
+          !isClickOnButton &&
+          mobileMenu.classList.contains("active")
+        ) {
+          console.log("Clicked outside, closing menu"); // Debug log
+          mobileMenuBtn.classList.remove("active");
+          mobileMenu.classList.remove("active");
+        }
+      }
+    });
+  });
+</script>

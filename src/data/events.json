@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Cyberverse 2K25",
+        "date": "20",
+        "month": "Feb",
+        "description": "The Annual event of CyberCell Club of BCET.",
+        "isFeatured": true,
+        "link": "",
+        "eventDescLink": "",
+        "eventTags": ["Competitive Coding" , "Development" , "Dancing" , "Singing" , "Quiz"],
+        "isUpcoming": true
+    },
+    {
+        "name": "Github Open Source Workshop",
+        "date": "06",
+        "month": "Oct",
+        "description": "The open source workshop for the community to get their hands on over the github and open source contributions.",
+        "isFeatured": false,
+        "link": "",
+        "eventDescLink": "",
+        "eventTags": ["Open Source" , "Github" , "Workshop"],
+        "isUpcoming": false
+    },
+    {
+        "name": "Co-ordinator Recruitment",
+        "date": "10",
+        "month": "Sep",
+        "description": "This is the reruitment event where all the passionate students of BCET are recruited as a member of the CyberCell Club.",
+        "isFeatured": false,
+        "link": "",
+        "eventDescLink": "",
+        "eventTags": ["Recruitment" , "Members"],
+        "isUpcoming": false
+    },
+    {
+        "name": "Web Development Bootcamp",
+        "date": "27",
+        "month": "Aug",
+        "description": "This bootcamp is organized for the 2nd Years of BCET to know more about web development and this helps to chose there carrier domain and add a new skill to their resume.",
+        "isFeatured": false,
+        "link": "",
+        "eventDescLink": "",
+        "eventTags": ["Bootcamp" , "Web Dev" , "HTML" , "CSS" , "JS"],
+        "isUpcoming": false
+    }
+]

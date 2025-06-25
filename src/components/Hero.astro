@@ -1,0 +1,373 @@
+---
+
+---
+
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Welcome to
+          <span class="title-highlight">CyberCell</span>
+          <span class="title-accent">BCET</span>
+        </h1>
+        <p class="hero-subtitle">
+          Empowering the next generation of cybersecurity professionals through
+          innovation, hands-on learning, and collaborative excellence.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Members</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">70+</span>
+            <span class="stat-label">Events</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Participants</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Explore More</a>
+          <a href="#contact" class="btn btn-secondary">Join Us</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-container">
+          <div class="code-block">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-title">cybersecurity.py</span>
+            </div>
+            <div class="code-content">
+              <div class="code-line">
+                <span class="code-keyword">import</span>
+                <span class="code-module">security</span>
+              </div>
+              <div class="code-line">
+                <span class="code-keyword">from</span>
+                <span class="code-module">cybercell</span>
+                <span class="code-keyword">import</span>
+                <span class="code-function">innovation</span>
+              </div>
+              <div class="code-line"></div>
+              <div class="code-line">
+                <span class="code-keyword">def</span>
+                <span class="code-function">secure_future</span>():
+              </div>
+              <div class="code-line code-indent">
+                <span class="code-keyword">return</span>
+                <span class="code-string">"Building tomorrow's defenders"</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-elements">
+            <div class="floating-icon lock">🔒</div>
+            <div class="floating-icon key">🔑</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animated background particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-6);
+  }
+
+  .title-highlight {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .title-accent {
+    color: var(--accent);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-8);
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .visual-container {
+    position: relative;
+    max-width: 500px;
+    margin-left: auto;
+  }
+
+  .code-block {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    font-family: var(--font-mono);
+  }
+
+  .code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4);
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  }
+
+  .code-dots {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .dot.red {
+    background: #ff5f56;
+  }
+  .dot.yellow {
+    background: #ffbd2e;
+  }
+  .dot.green {
+    background: #27ca3f;
+  }
+
+  .code-title {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .code-content {
+    padding: var(--space-6);
+  }
+
+  .code-line {
+    line-height: 1.8;
+    font-size: 0.875rem;
+  }
+
+  .code-indent {
+    padding-left: var(--space-6);
+  }
+
+  .code-keyword {
+    color: var(--secondary);
+  }
+  .code-module {
+    color: var(--primary);
+  }
+  .code-function {
+    color: var(--accent);
+  }
+  .code-string {
+    color: #f59e0b;
+  }
+
+  .floating-elements {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .floating-icon {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .floating-icon.shield {
+    top: 10%;
+    right: -20%;
+    animation-delay: 0s;
+  }
+
+  .floating-icon.lock {
+    top: 60%;
+    right: -15%;
+    animation-delay: 2s;
+  }
+
+  .floating-icon.key {
+    bottom: 20%;
+    left: -15%;
+    animation-delay: 4s;
+  }
+
+  .floating-icon.bug {
+    top: 30%;
+    left: -20%;
+    animation-delay: 1s;
+  }
+
+  .particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: particle-float 20s linear infinite;
+  }
+
+  .particle:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .particle:nth-child(2) {
+    left: 30%;
+    animation-delay: 4s;
+  }
+
+  .particle:nth-child(3) {
+    left: 50%;
+    animation-delay: 8s;
+  }
+
+  .particle:nth-child(4) {
+    left: 70%;
+    animation-delay: 12s;
+  }
+
+  .particle:nth-child(5) {
+    left: 90%;
+    animation-delay: 16s;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes particle-float {
+    0% {
+      transform: translateY(100vh) scale(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) scale(1);
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+
+    .hero-stats {
+      justify-content: center;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+
+    .visual-container {
+      margin: 0 auto;
+    }
+
+    .floating-icon {
+      display: none;
+    }
+  }
+</style>

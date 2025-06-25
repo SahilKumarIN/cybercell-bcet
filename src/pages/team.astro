@@ -1,0 +1,585 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import leaders from "../data/club-leaders.json";
+import socialMediaHandlers from "../data/social-media-handlers.json";
+import mentors from "../data/mentors.json";
+import organizers from "../data/organizers.json";
+---
+
+<Layout
+  title="Our Team - CyberCell BCET"
+  description="Meet the passionate team members and leadership of CyberCell BCET driving cybersecurity innovation and education."
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Our Team</h1>
+          <p class="hero-subtitle">
+            Meet the passionate individuals driving CyberCell BCET forward with
+            innovation and dedication
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Leadership Team</h2>
+          <p class="section-subtitle">
+            Experienced leaders guiding our cybersecurity mission
+          </p>
+        </div>
+
+        <div class="leadership-grid">
+          {
+            leaders.map((leader) => (
+              <div
+                class={
+                  leader.designation === "Student Chief Coordinator"
+                    ? "member-card featured card"
+                    : "member-card card"
+                }
+              >
+                <div class="member-avatar">
+                  <img
+                    src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                    alt="Technical Lead"
+                  />
+                  <div class="member-status away" />
+                </div>
+                <div class="member-info">
+                  <h3>{leader.name}</h3>
+                  <p class="member-role">{leader.designation}</p>
+                  <p class="member-department">{leader.collegeYrDept}</p>
+                  <p class="member-bio">{leader.description}</p>
+                  <div class="member-skills">
+                    {leader.skillTag.map((skill) => (
+                      <span class="skill">{skill}</span>
+                    ))}
+                  </div>
+                  <div class="member-social">
+                    <a
+                      href={leader.linkedin}
+                      class="social-link"
+                      title="LinkedIn"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+                    <a href={leader.github} class="social-link" title="GitHub">
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Department Heads -->
+    <section class="section department-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Social Media Handlers</h2>
+          <p class="section-subtitle">
+            Specialized leaders managing different aspects of our operations
+          </p>
+        </div>
+
+        <div class="department-grid">
+          {
+            socialMediaHandlers.map((mediaHandler) => (
+              <div class="member-card compact card">
+                <div class="member-avatar small">
+                  <img
+                    src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                    alt="Events Head"
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>{mediaHandler.name}</h4>
+                  <p class="member-role">{mediaHandler.socialName}</p>
+                  <p class="member-department">{mediaHandler.collegeYrDept}</p>
+                  <p class="member-bio">{mediaHandler.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Team Members -->
+    <section class="section core-team-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Core Team Members</h2>
+          <p class="section-subtitle">
+            Meet our <h4 class="section-title">Mentors</h4>
+          </p>
+        </div>
+
+        <div class="core-team-grid">
+          <div class="member-card mini card">
+            <div class="member-avatar mini">
+              <img
+                src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                alt="Core Member"
+              />
+            </div>
+            <div class="member-info">
+              <h5>Neha Singh</h5>
+              <p class="member-role">Cryptography Expert</p>
+            </div>
+          </div>
+          {
+            mentors.map((mentor) => (
+              <div class="member-card mini card">
+                <div class="member-avatar mini">
+                  <img
+                    src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                    alt="Core Member"
+                  />
+                </div>
+                <div class="member-info">
+                  <h5>Amit Patel</h5>
+                  <p class="member-role">Web Security Specialist</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <br />
+        <br />
+        <div class="section-header">
+          <h4 class="section-title">Organizers</h4>
+        </div>
+        <div class="core-team-grid">
+          <div class="member-card mini card">
+            <div class="member-avatar mini">
+              <img
+                src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                alt="Core Member"
+              />
+            </div>
+            <div class="member-info">
+              <h5>Neha Singh</h5>
+              <p class="member-role">Cryptography Expert</p>
+            </div>
+          </div>
+          {
+            organizers.map((organizer) => (
+              <div class="member-card mini card">
+                <div class="member-avatar mini">
+                  <img
+                    src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                    alt="Core Member"
+                  />
+                </div>
+                <div class="member-info">
+                  <h5>Amit Patel</h5>
+                  <p class="member-role">Web Security Specialist</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Team CTA -->
+    <section class="section join-team-section">
+      <div class="container">
+        <div class="join-team-content">
+          <h2>Want to Join Our Team?</h2>
+          <p>
+            We're always looking for passionate individuals to join our mission
+            of advancing cybersecurity education and research.
+          </p>
+          <div class="join-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon">🎓</div>
+              <h4>Learn & Grow</h4>
+              <p>
+                Enhance your cybersecurity skills through hands-on experience
+              </p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🤝</div>
+              <h4>Network</h4>
+              <p>Connect with industry professionals and like-minded peers</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🏆</div>
+              <h4>Recognition</h4>
+              <p>Gain recognition for your contributions and achievements</p>
+            </div>
+          </div>
+          <div class="join-actions">
+            <a href="/join" class="btn btn-primary">Apply to Join</a>
+            <a href="/contact" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .hero-section {
+    padding: 120px 0 80px;
+    background: var(--gradient-bg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 212, 255, 0.1) 0%,
+      transparent 70%
+    );
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-6);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-16);
+  }
+
+  .member-card {
+    text-align: center;
+    padding: var(--space-8);
+    position: relative;
+  }
+
+  .member-card.featured {
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .member-card.compact {
+    padding: var(--space-6);
+  }
+
+  .member-card.mini {
+    padding: var(--space-4);
+  }
+
+  .member-avatar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto var(--space-6);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .member-avatar.small {
+    width: 100px;
+    height: 100px;
+    margin-bottom: var(--space-4);
+  }
+
+  .member-avatar.mini {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--space-3);
+  }
+
+  .member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .member-card:hover .member-avatar img {
+    transform: scale(1.1);
+  }
+
+  .member-status {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-secondary);
+  }
+
+  .member-status.online {
+    background: var(--accent);
+  }
+
+  .member-status.away {
+    background: var(--warning);
+  }
+
+  .member-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-2);
+    color: var(--text-primary);
+  }
+
+  .member-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+    color: var(--text-primary);
+  }
+
+  .member-info h5 {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-1);
+    color: var(--text-primary);
+  }
+
+  .member-role {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+  }
+
+  .member-department {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .member-bio {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+    line-height: 1.6;
+  }
+
+  .member-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+  }
+
+  .skill {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+  }
+
+  .member-social {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: var(--radius-lg);
+    color: var(--primary);
+    transition: all var(--transition-fast);
+  }
+
+  .social-link:hover {
+    background: var(--primary);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .department-section {
+    background: var(--bg-secondary);
+  }
+
+  .department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .core-team-section {
+    background: var(--bg-tertiary);
+  }
+
+  .core-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .join-team-section {
+    background: var(--gradient-primary);
+    color: white;
+  }
+
+  .join-team-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .join-team-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+    color: white;
+  }
+
+  .join-team-content > p {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-12);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .join-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+  }
+
+  .benefit-item {
+    text-align: center;
+  }
+
+  .benefit-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .benefit-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-3);
+    color: white;
+  }
+
+  .benefit-item p {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .join-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .join-actions .btn {
+    background: white;
+    color: var(--primary);
+    border: none;
+  }
+
+  .join-actions .btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary);
+  }
+
+  .join-actions .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .join-actions .btn-secondary:hover {
+    background: white;
+    color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+    .leadership-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .department-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .core-team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .join-benefits {
+      grid-template-columns: 1fr;
+    }
+
+    .join-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .department-grid,
+    .core-team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

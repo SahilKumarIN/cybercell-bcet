@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Pawan Raj Singh",
+        "socialName": "LinkedIn",
+        "collegeYrDept": "Final Yr. CSE",
+        "description": "Organizing and managing all club events and workshops.",
+        "imageUrl": ""
+    },
+    {
+        "name": "Mouli Sarkar",
+        "socialName": "Instagram",
+        "collegeYrDept": "Final Yr. IT",
+        "description": "Organizing and managing all club events and workshops.",
+        "imageUrl": ""
+    },
+    {
+        "name": "Supriyo Gorai",
+        "socialName": "Facebook",
+        "collegeYrDept": "Final Yr. IT",
+        "description": "Organizing and managing all club events and workshops.",
+        "imageUrl": ""
+    }
+]

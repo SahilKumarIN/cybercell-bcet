@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Satyam Utsav",
+        "rollNo": "222",
+        "team":"Developer",
+        "isLead": true,
+        "leadRole": "Github Admin"
+    },
+    {
+        "name": "Khushi Singh",
+        "rollNo": "78",
+        "team": "Developer",
+        "isLead": true,
+        "leadRole": "Mail Handler"
+    }
+]

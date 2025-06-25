@@ -1,0 +1,272 @@
+---
+
+---
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">About CyberCell BCET</h2>
+      <p class="section-subtitle">We make people who secure our future!</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-content">
+        <div class="mission-card">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path
+                d="M24 4L30 18H44L34 28L38 42L24 34L10 42L14 28L4 18H18L24 4Z"
+                fill="url(#mission-gradient)"
+                stroke="currentColor"
+                stroke-width="2"></path>
+              <defs>
+                <linearGradient
+                  id="mission-gradient"
+                  x1="0"
+                  y1="0"
+                  x2="48"
+                  y2="48"
+                >
+                  <stop stop-color="var(--primary)"></stop>
+                  <stop offset="1" stop-color="var(--secondary)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            To create a vibrant community of cybersecurity enthusiasts who are
+            passionate about protecting digital assets and building secure
+            systems for the future.
+          </p>
+        </div>
+
+        <div class="vision-card">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle
+                cx="24"
+                cy="24"
+                r="20"
+                fill="none"
+                stroke="url(#vision-gradient)"
+                stroke-width="2"></circle>
+              <circle
+                cx="24"
+                cy="24"
+                r="12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"></circle>
+              <circle cx="24" cy="24" r="4" fill="var(--accent)"></circle>
+              <defs>
+                <linearGradient
+                  id="vision-gradient"
+                  x1="0"
+                  y1="0"
+                  x2="48"
+                  y2="48"
+                >
+                  <stop stop-color="var(--accent)"></stop>
+                  <stop offset="1" stop-color="var(--primary)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            To be the leading technical club that shapes the next generation of
+            cybersecurity professionals through hands-on experience and
+            cutting-edge research.
+          </p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h4>Security Research</h4>
+          <p>Conducting cutting-edge research in cybersecurity domains</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h4>Skill Development</h4>
+          <p>Workshops and training sessions on latest security tools</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h4>CTF Competitions</h4>
+          <p>Participating in national and international CTF challenges</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h4>Industry Connect</h4>
+          <p>Networking with security professionals and industry experts</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h4>Knowledge Sharing</h4>
+          <p>Regular seminars and knowledge sharing sessions</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h4>Innovation Hub</h4>
+          <p>Developing innovative security solutions and tools</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-grid {
+    display: grid;
+    gap: var(--space-16);
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    margin-bottom: var(--space-16);
+  }
+
+  .mission-card,
+  .vision-card {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 16px;
+    padding: var(--space-8);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .mission-card:hover,
+  .vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--primary);
+  }
+
+  .card-icon {
+    margin-bottom: var(--space-6);
+    color: var(--primary);
+  }
+
+  .mission-card h3,
+  .vision-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+  }
+
+  .mission-card p,
+  .vision-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .feature-card {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(180, 180, 199, 0.1);
+    border-radius: 12px;
+    padding: var(--space-6);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(0, 212, 255, 0.1),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .feature-card:hover::before {
+    left: 100%;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .feature-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+  }
+
+  .feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .mission-card,
+    .vision-card {
+      padding: var(--space-6);
+    }
+  }
+</style>
