@@ -254,15 +254,15 @@ import Footer from "../components/Footer.astro";
                     required></textarea>
                 </div>
 
-                <div class="form-group checkbox-group">
+                <!-- <div class="form-group checkbox-group">
                   <label class="checkbox-label">
                     <input type="checkbox" id="newsletter" name="newsletter" />
                     <span class="checkmark"></span>
                     Subscribe to our newsletter for updates on events and activities
                   </label>
-                </div>
+                </div> -->
 
-                <div class="form-group checkbox-group">
+                <!-- <div class="form-group checkbox-group">
                   <label class="checkbox-label">
                     <input
                       type="checkbox"
@@ -275,7 +275,7 @@ import Footer from "../components/Footer.astro";
                       href="/terms">Terms of Service</a
                     > *
                   </label>
-                </div>
+                </div> -->
 
                 <button type="submit" class="btn btn-primary form-submit">
                   <span class="btn-text">Send Message</span>
@@ -800,11 +800,20 @@ import Footer from "../components/Footer.astro";
 </style>
 
 <script>
+  import { addMessage } from "../db/FirebaseFunctions.js";
   document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById("contactForm");
 
     contactForm?.addEventListener("submit", async (e) => {
       e.preventDefault();
+
+      const firstName = document.querySelector("#firstName").value;
+      const lastName = document.querySelector("#lastName").value;
+      const email = document.querySelector("#email").value;
+      const phone = document.querySelector("#phone").value;
+      const year = document.querySelector("#year").value;
+      const subject = document.querySelector("#subject").value;
+      const message = document.querySelector("#message").value;
 
       const submitBtn = contactForm.querySelector(".form-submit");
       const btnText = submitBtn.querySelector(".btn-text");
@@ -815,19 +824,29 @@ import Footer from "../components/Footer.astro";
       btnLoading.style.display = "block";
       submitBtn.disabled = true;
 
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      addMessage({
+        name: firstName + " " + lastName,
+        email,
+        phone,
+        year,
+        subject,
+        message,
+      })
+        .then(() => {
+          alert("Thank you for your message! We'll get back to you soon.");
+        })
+        .catch((err) => {
+          alert(
+            "There was an error sending your message! Please try again after some time."
+          );
+        })
+        .finally(() => {
+          contactForm.reset();
 
-      // Show success message
-      alert("Thank you for your message! We'll get back to you soon.");
-
-      // Reset form
-      contactForm.reset();
-
-      // Reset button state
-      btnText.style.display = "block";
-      btnLoading.style.display = "none";
-      submitBtn.disabled = false;
+          btnText.style.display = "block";
+          btnLoading.style.display = "none";
+          submitBtn.disabled = false;
+        });
     });
   });
 </script>
