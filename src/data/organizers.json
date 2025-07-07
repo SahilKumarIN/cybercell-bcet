@@ -1,16 +1,156 @@
 [
-    {
-        "name": "Satyam Utsav",
-        "rollNo": "222",
-        "team":"Developer",
-        "isLead": true,
-        "leadRole": "Github Admin"
-    },
-    {
-        "name": "Khushi Singh",
-        "rollNo": "78",
-        "team": "Developer",
-        "isLead": true,
-        "leadRole": "Mail Handler"
-    }
+  {
+    "name": "Aarfa Fatima",
+    "department": "B.Tech CSE(AI-ML)",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Aditya Kumar Singh",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Atulya Kumar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Deepti kumari",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Gaurav singh",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Harshvardhan Raj",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Khushi Singh",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Mail Handler"
+  },
+  {
+    "name": "Nandini Kumari",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Priyanka Singh",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Ranajit Gupta",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Ritesh Vishwakarma",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Sameer kumar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Samrat Samanta",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Mail Handler"
+  },
+  {
+    "name": "Sanjeev Kr. Pandit",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Satyam Utsav",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Assistant Mail Handler & Web Admin"
+  },
+  {
+    "name": "Sepal Sagar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Shivesh Kumar Jha",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Shovan Aagrwal",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Shruti Jha",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Utsav Kishore Ojha",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Vivek Kr. Gupta",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Suman Kumari",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  }
 ]

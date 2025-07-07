@@ -8,7 +8,9 @@
         "link": "",
         "eventDescLink": "",
         "eventTags": ["Competitive Coding" , "Development" , "Dancing" , "Singing" , "Quiz"],
-        "isUpcoming": true
+        "isUpcoming": true,
+        "seatsAvailable": "200-250",
+        "duration": "5-7 Days"
     },
     {
         "name": "Github Open Source Workshop",
@@ -19,7 +21,9 @@
         "link": "",
         "eventDescLink": "",
         "eventTags": ["Open Source" , "Github" , "Workshop"],
-        "isUpcoming": false
+        "isUpcoming": false,
+        "seatsAvailable": "200-250",
+        "duration": "1-2 Days"
     },
     {
         "name": "Co-ordinator Recruitment",
@@ -30,7 +34,9 @@
         "link": "",
         "eventDescLink": "",
         "eventTags": ["Recruitment" , "Members"],
-        "isUpcoming": false
+        "isUpcoming": false,
+        "seatsAvailable": "20",
+        "duration": "3-4 Days"
     },
     {
         "name": "Web Development Bootcamp",
@@ -41,6 +47,8 @@
         "link": "",
         "eventDescLink": "",
         "eventTags": ["Bootcamp" , "Web Dev" , "HTML" , "CSS" , "JS"],
-        "isUpcoming": false
+        "isUpcoming": false,
+        "seatsAvailable": "150-200",
+        "duration": "5-7 Days"
     }
 ]

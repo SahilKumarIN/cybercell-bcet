@@ -5,7 +5,7 @@
         "description": "Final year CSE student passionate about mobile app development and new technologies.",
         "linkedin": "",
         "github": "",
-        "imageUrl": "",
+        "imageUrl": "/sahil.jpg",
         "collegeYrDept": "Final Yr. CSE",
         "skillTag": ["React Native" , "Java" , "Docker"]
     },
@@ -15,7 +15,7 @@
         "description": "Specializing in network security and digital forensics with multiple certifications.",
         "linkedin": "",
         "github": "",
-        "imageUrl": "",
+        "imageUrl": "/khushi-saumya.jpg",
         "collegeYrDept":"Final Yr. CSE",
         "skillTag": ["ReactJS" , "Github" , "Java"]
     }

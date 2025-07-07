@@ -1,0 +1,710 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="404 - Page Not Found | CyberCell BCET"
+  description="The page you're looking for could not be found. Return to CyberCell BCET homepage or explore our cybersecurity resources."
+>
+  <Header />
+  <main class="error-page">
+    <!-- 404 Hero Section -->
+    <section class="error-hero">
+      <div class="container">
+        <div class="error-content">
+          <div class="error-visual">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">security_scan.sh</span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="prompt">cybercell@bcet:~$</span>
+                  <span class="command">scan --target page_not_found</span>
+                </div>
+                <div class="terminal-line">
+                  <span class="output">Scanning target...</span>
+                </div>
+                <div class="terminal-line">
+                  <span class="output error">ERROR 404: Target not found</span>
+                </div>
+                <div class="terminal-line">
+                  <span class="output">Status: MISSING</span>
+                </div>
+                <div class="terminal-line">
+                  <span class="output">Recommendation: Return to base</span>
+                </div>
+                <div class="terminal-line">
+                  <span class="prompt">cybercell@bcet:~$</span>
+                  <span class="cursor">_</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Security Icons -->
+            <div class="floating-icons">
+              <div class="security-icon shield">🛡️</div>
+              <div class="security-icon lock">🔒</div>
+              <div class="security-icon warning">⚠️</div>
+              <div class="security-icon search">🔍</div>
+              <div class="security-icon bug">🐛</div>
+            </div>
+          </div>
+
+          <div class="error-info">
+            <div class="error-code">
+              <span class="code-number">404</span>
+              <span class="code-text">PAGE NOT FOUND</span>
+            </div>
+
+            <h1 class="error-title">
+              Security Scan Complete
+              <span class="title-accent">Target Not Located</span>
+            </h1>
+
+            <p class="error-description">
+              Our cybersecurity scanners couldn't locate the requested resource.
+              The page you're looking for might have been moved, deleted, or
+              never existed. Don't worry - our security protocols will help you
+              find what you need.
+            </p>
+
+            <div class="error-suggestions">
+              <h3>Suggested Actions:</h3>
+              <ul class="suggestions-list">
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                  </svg>
+                  Return to the homepage
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                    ></path>
+                  </svg>
+                  Use the search function
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  Check our latest events
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    ></path>
+                  </svg>
+                  Contact our support team
+                </li>
+              </ul>
+            </div>
+
+            <div class="error-actions">
+              <a href="/" class="btn btn-primary">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                </svg>
+                Return Home
+              </a>
+              <a href="/events" class="btn btn-secondary">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
+                  ></path>
+                </svg>
+                View Events
+              </a>
+              <a href="/contact" class="btn btn-ghost">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  ></path>
+                </svg>
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Effects -->
+      <div class="bg-effects">
+        <div class="grid-pattern"></div>
+        <div class="scan-lines"></div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="quick-nav-section">
+      <div class="container">
+        <h2>Quick Navigation</h2>
+        <div class="quick-nav-grid">
+          <a href="/about" class="nav-card card">
+            <div class="nav-icon">ℹ️</div>
+            <h3>About Us</h3>
+            <p>Learn about our mission and vision</p>
+          </a>
+
+          <a href="/team" class="nav-card card">
+            <div class="nav-icon">👥</div>
+            <h3>Our Team</h3>
+            <p>Meet our cybersecurity experts</p>
+          </a>
+
+          <a href="/blog" class="nav-card card">
+            <div class="nav-icon">📚</div>
+            <h3>Blog</h3>
+            <p>Latest cybersecurity insights</p>
+          </a>
+
+          <a href="/join" class="nav-card card">
+            <div class="nav-icon">🚀</div>
+            <h3>Join Us</h3>
+            <p>Become part of our community</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .error-page {
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+
+  .error-hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-bg);
+  }
+
+  .error-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .error-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .terminal-window {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    font-family: var(--font-mono);
+  }
+
+  .terminal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4);
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  }
+
+  .terminal-dots {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .dot.red {
+    background: #ff5f56;
+  }
+  .dot.yellow {
+    background: #ffbd2e;
+  }
+  .dot.green {
+    background: #27ca3f;
+  }
+
+  .terminal-title {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .terminal-body {
+    padding: var(--space-6);
+    background: var(--bg-primary);
+  }
+
+  .terminal-line {
+    margin-bottom: var(--space-2);
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .prompt {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .command {
+    color: var(--primary);
+    margin-left: var(--space-2);
+  }
+
+  .output {
+    color: var(--text-secondary);
+  }
+
+  .output.error {
+    color: var(--error);
+    font-weight: 600;
+  }
+
+  .cursor {
+    color: var(--primary);
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .floating-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .security-icon {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.6;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .security-icon.shield {
+    top: 10%;
+    right: -10%;
+    animation-delay: 0s;
+  }
+
+  .security-icon.lock {
+    top: 60%;
+    right: -5%;
+    animation-delay: 1s;
+  }
+
+  .security-icon.warning {
+    bottom: 20%;
+    left: -10%;
+    animation-delay: 2s;
+  }
+
+  .security-icon.search {
+    top: 30%;
+    left: -15%;
+    animation-delay: 3s;
+  }
+
+  .security-icon.bug {
+    bottom: 40%;
+    right: -20%;
+    animation-delay: 4s;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(-5deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(3deg);
+    }
+  }
+
+  .error-info {
+    text-align: center;
+  }
+
+  .error-code {
+    margin-bottom: var(--space-8);
+  }
+
+  .code-number {
+    display: block;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-2);
+  }
+
+  .code-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .error-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-6);
+    color: var(--text-primary);
+    line-height: 1.2;
+  }
+
+  .title-accent {
+    display: block;
+    color: var(--accent);
+    font-size: 2rem;
+    margin-top: var(--space-2);
+  }
+
+  .error-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-8);
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .error-suggestions {
+    margin-bottom: var(--space-10);
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .error-suggestions h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+    text-align: center;
+  }
+
+  .suggestions-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .suggestions-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+
+  .suggestions-list svg {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .error-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .error-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .bg-effects {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+        rgba(0, 212, 255, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+  }
+
+  @keyframes grid-move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(50px, 50px);
+    }
+  }
+
+  .scan-lines {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 212, 255, 0.1) 50%,
+      transparent 100%
+    );
+    animation: scan 3s ease-in-out infinite;
+  }
+
+  @keyframes scan {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+
+  .quick-nav-section {
+    padding: var(--space-20) 0;
+    background: var(--bg-secondary);
+  }
+
+  .quick-nav-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--space-12);
+    color: var(--text-primary);
+  }
+
+  .quick-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .nav-card {
+    padding: var(--space-8);
+    text-align: center;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-xl);
+    color: inherit;
+  }
+
+  .nav-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .nav-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+  }
+
+  .nav-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 1024px) {
+    .error-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      text-align: center;
+    }
+
+    .error-visual {
+      order: 2;
+    }
+
+    .error-info {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .code-number {
+      font-size: 6rem;
+    }
+
+    .error-title {
+      font-size: 2rem;
+    }
+
+    .title-accent {
+      font-size: 1.5rem;
+    }
+
+    .error-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .quick-nav-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .floating-icons {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .quick-nav-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .terminal-window {
+      margin: 0 var(--space-4);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Add some interactive terminal effects
+    const terminal = document.querySelector(".terminal-body");
+
+    if (terminal) {
+      // Simulate typing effect on load
+      const lines = terminal.querySelectorAll(".terminal-line");
+      lines.forEach((line, index) => {
+        line.style.opacity = "0";
+        setTimeout(() => {
+          line.style.opacity = "1";
+          line.style.animation = "fadeInUp 0.5s ease";
+        }, index * 300);
+      });
+    }
+
+    // Add glitch effect to 404 number occasionally
+    const codeNumber = document.querySelector(".code-number");
+    if (codeNumber) {
+      setInterval(() => {
+        if (Math.random() < 0.1) {
+          // 10% chance every interval
+          codeNumber.style.animation = "glitch 0.3s ease";
+          setTimeout(() => {
+            codeNumber.style.animation = "";
+          }, 300);
+        }
+      }, 2000);
+    }
+  });
+
+  // Add CSS for animations
+  const style = document.createElement("style");
+  style.textContent = `
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+  `;
+  document.head.appendChild(style);
+</script>

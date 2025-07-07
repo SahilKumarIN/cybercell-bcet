@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Harsh Thakur",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "SCO 2025"
+  },
+  {
+    "name": "Aaisha Perveen",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Joint SCO 2025"
+  },
+  {
+    "name": "Aishwarya Panja",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Social Media Handler\nInstagram"
+  },
+  {
+    "name": "Amit Kumar Mondal",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Social Media Handler\nFacebook"
+  },
+  {
+    "name": "Anish Jaiswal",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Social Media Handler\nLinkedIn"
+  },
+  {
+    "name": "Anshu Raj",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Aparna Shukla",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Bijay Kumar Yadav",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  
+  {
+    "name": "Pratik raj",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Ritik raja",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Sonu Kumar Ranjan",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Subhendu Singh",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Tanya Singh",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Vats Kumar Sourav",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  }
+]

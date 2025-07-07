@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Sent Successfully - CyberCell BCET</title>
+    <style>
+      /* Reset styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        background: linear-gradient(135deg, #0a0a0f 0%, #151520 100%);
+        margin: 0;
+        padding: 0;
+      }
+
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: linear-gradient(
+          145deg,
+          rgba(21, 21, 32, 0.9) 0%,
+          rgba(30, 30, 46, 0.8) 100%
+        );
+        border: 1px solid rgba(0, 212, 255, 0.2);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 20px 25px -5px rgba(0, 212, 255, 0.1);
+      }
+
+      .email-header {
+        background: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 100%);
+        padding: 40px 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .email-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 50%
+        );
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .logo-icon {
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        backdrop-filter: blur(10px);
+      }
+
+      .logo-text {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+      }
+
+      .logo-accent {
+        color: #00ff88;
+      }
+
+      .success-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(0, 255, 136, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        border: 3px solid #00ff88;
+        position: relative;
+        z-index: 1;
+      }
+
+      .success-icon svg {
+        width: 40px;
+        height: 40px;
+        color: #00ff88;
+      }
+
+      .email-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .email-subtitle {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        z-index: 1;
+      }
+
+      .email-body {
+        padding: 40px 30px;
+        background: rgba(21, 21, 32, 0.8);
+      }
+
+      .message-box {
+        background: rgba(0, 212, 255, 0.1);
+        border: 1px solid rgba(0, 212, 255, 0.2);
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 30px;
+        border-left: 4px solid #00d4ff;
+      }
+
+      .message-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #00d4ff;
+        margin-bottom: 12px;
+      }
+
+      .message-text {
+        color: #b4b4c7;
+        line-height: 1.6;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .info-item {
+        background: rgba(30, 30, 46, 0.6);
+        border: 1px solid rgba(180, 180, 199, 0.1);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .info-label {
+        font-size: 12px;
+        color: #6b7280;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 4px;
+      }
+
+      .info-value {
+        font-size: 14px;
+        color: #b4b4c7;
+        font-weight: 500;
+      }
+
+      .next-steps {
+        background: rgba(139, 92, 246, 0.1);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 30px;
+      }
+
+      .next-steps-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #8b5cf6;
+        margin-bottom: 16px;
+      }
+
+      .steps-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .steps-list li {
+        color: #b4b4c7;
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .steps-list li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #00ff88;
+        font-weight: bold;
+      }
+
+      .cta-section {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 212, 255, 0.3);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        border: 2px solid #00d4ff;
+        color: #00d4ff;
+        margin-left: 12px;
+      }
+
+      .btn-secondary:hover {
+        background: #00d4ff;
+        color: #0a0a0f;
+      }
+
+      .email-footer {
+        background: rgba(10, 10, 15, 0.8);
+        padding: 30px;
+        text-align: center;
+        border-top: 1px solid rgba(180, 180, 199, 0.1);
+      }
+
+      .footer-content {
+        margin-bottom: 20px;
+      }
+
+      .footer-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 8px;
+      }
+
+      .footer-text {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.5;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      .social-link {
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 212, 255, 0.1);
+        border: 1px solid rgba(0, 212, 255, 0.2);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #00d4ff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        background: rgba(0, 212, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .footer-link {
+        color: #6b7280;
+        text-decoration: none;
+        font-size: 12px;
+        transition: color 0.3s ease;
+      }
+
+      .footer-link:hover {
+        color: #00d4ff;
+      }
+
+      .copyright {
+        font-size: 12px;
+        color: #4b5563;
+        border-top: 1px solid rgba(180, 180, 199, 0.1);
+        padding-top: 20px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        .email-container {
+          margin: 0 10px;
+        }
+
+        .email-header,
+        .email-body,
+        .email-footer {
+          padding: 20px;
+        }
+
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .btn-secondary {
+          margin-left: 0;
+          margin-top: 12px;
+          display: block;
+        }
+
+        .footer-links {
+          flex-direction: column;
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Header -->
+      <div class="email-header">
+        <div class="logo-container">
+          <div class="logo-icon">🛡️</div>
+          <div class="logo-text">
+            CyberCell<span class="logo-accent">BCET</span>
+          </div>
+        </div>
+
+        <div class="success-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="M5 13l4 4L19 7"
+            ></path>
+          </svg>
+        </div>
+
+        <h1 class="email-title">Message Sent Successfully!</h1>
+        <p class="email-subtitle">
+          Your message has been securely transmitted to our team
+        </p>
+      </div>
+
+      <!-- Body -->
+      <div class="email-body">
+        <div class="message-box">
+          <h2 class="message-title">✅ Transmission Confirmed</h2>
+          <p class="message-text">
+            Great news! Your message has been successfully received by the
+            CyberCell BCET team. Our cybersecurity experts will review your
+            inquiry and respond within 24-48 hours.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">Message ID</div>
+            <div class="info-value">#CC-MSG-2024-001</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Timestamp</div>
+            <div class="info-value">Dec 15, 2024 - 14:30 IST</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Priority Level</div>
+            <div class="info-value">Standard</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Response Time</div>
+            <div class="info-value">24-48 hours</div>
+          </div>
+        </div>
+
+        <div class="next-steps">
+          <h3 class="next-steps-title">What Happens Next?</h3>
+          <ul class="steps-list">
+            <li>Our team will review your message within 2 hours</li>
+            <li>You'll receive a detailed response within 24-48 hours</li>
+            <li>For urgent matters, we'll prioritize your inquiry</li>
+            <li>Check your email regularly for our response</li>
+          </ul>
+        </div>
+
+        <div class="cta-section">
+          <a href="https://cybercell-bcet.com" class="btn">Visit Our Website</a>
+          <a href="https://cybercell-bcet.com/events" class="btn btn-secondary"
+            >View Events</a
+          >
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="email-footer">
+        <div class="footer-content">
+          <h3 class="footer-title">Stay Connected</h3>
+          <p class="footer-text">
+            Follow us on social media for the latest cybersecurity updates and
+            events
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://cybercell-bcet.com/about" class="footer-link"
+            >About Us</a
+          >
+          <a href="https://cybercell-bcet.com/events" class="footer-link"
+            >Events</a
+          >
+          <a href="https://cybercell-bcet.com/team" class="footer-link"
+            >Our Team</a
+          >
+          <a href="https://cybercell-bcet.com/blog" class="footer-link">Blog</a>
+          <a href="https://cybercell-bcet.com/contact" class="footer-link"
+            >Contact</a
+          >
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2024 CyberCell BCET. All rights reserved. | Securing Tomorrow
+            Today
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

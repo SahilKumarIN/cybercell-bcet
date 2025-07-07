@@ -1,19 +1,18 @@
 ---
 import founders from "../data/founders.json";
 import faculties from "../data/faculties.json";
-import leaders from "../data/club-leaders.json";
 ---
 
 <section id="team" class="section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Our Team</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title">Minds Behinds the Club</h2>
+      <!-- <p class="section-subtitle">
         Meet the passionate individuals driving CyberCell BCET forward
-      </p>
+      </p> -->
     </div>
 
-    <div class="team-categories">
+    <!-- <div class="team-categories">
       <div class="category">
         <h3 class="category-title">Leadership Team</h3>
         <div class="team-grid">
@@ -58,31 +57,9 @@ import leaders from "../data/club-leaders.json";
           }
         </div>
       </div>
-    </div>
-
+    </div> -->
     <div class="category">
-      <h3 class="category-title">Faculties</h3>
-      <div class="team-grid">
-        {
-          faculties.map((faculty) => (
-            <div class="member-card compact">
-              <div class="member-avatar small">
-                <img
-                  src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
-                  alt="Events Head"
-                />
-              </div>
-              <div class="member-info">
-                <h4>{faculty.name}</h4>
-                <p class="member-role">{faculty.designation}</p>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-    <div class="category">
-      <h3 class="category-title">Minds Behind the Club</h3>
+      <h3 class="category-title">Founder & Co-Founder</h3>
       <div class="team-grid">
         {
           founders.map((founder) => (
@@ -93,6 +70,24 @@ import leaders from "../data/club-leaders.json";
               <div class="member-info">
                 <h4>{founder.name}</h4>
                 <p class="member-role">{founder.designation}, CyberCell</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="category">
+      <h3 class="category-title">Faculties</h3>
+      <div class="team-grid">
+        {
+          faculties.map((faculty) => (
+            <div class="member-card compact">
+              <div class="member-avatar small">
+                <img src={faculty.imgUrl} alt="Events Head" />
+              </div>
+              <div class="member-info">
+                <h4>{faculty.name}</h4>
+                <p class="member-role">{faculty.designation}</p>
               </div>
             </div>
           ))

@@ -1,3 +1,149 @@
 [
-    {}
+  {
+    "name": "Aditya Raj",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Aryan kumar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Ashish Sinha",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Atul Kant Tiwari",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Ayush kumar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Harsh Sharma",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Khushi Saumya",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Joint-SCO 2026"
+  },
+  {
+    "name": "Kumari Priyanshu",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Lovely Kumari",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "MOOLA PRAVALESH",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Mouli Sarkar",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Social Media Handler\nInstagram"
+  },
+  {
+    "name": "Pawan Raj Singh",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Social Media Handler\nLinkedIn"
+  },
+  {
+    "name": "PRERNA SHREE",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Richa",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Sahil Kumar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "SCO 2026"
+  },
+  {
+    "name": "Sanvi Kumari",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Sayan Barma",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Shubham Kumar",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Sounak Kundu",
+    "department": "B.Tech CSE",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  },
+  {
+    "name": "Supriyo Garai",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": true,
+    "leadRole": "Social Media Handler\nFacebook"
+  },
+  {
+    "name": "SWAPNIL BHADANI",
+    "department": "B.Tech IT",
+    "imgUrl": "",
+    "isLeadRole": false,
+    "leadRole": ""
+  }
 ]

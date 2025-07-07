@@ -3,7 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-import alumni from "../data/alumni.json";
+import alumni2025 from "../data/alumni/2025.json";
+import alumni2024 from "../data/alumni/2024.json";
+import alumni2023 from "../data/alumni/2023.json";
+import alumni2022 from "../data/alumni/2022.json";
 ---
 
 <Layout
@@ -28,23 +31,26 @@ import alumni from "../data/alumni.json";
     <!-- Core Team Members -->
     <section class="section core-team-section">
       <div class="container">
+        <!-- Batch 2025 -->
         <div class="section-header">
           <h2 class="section-title">Batch 2025</h2>
         </div>
         <div class="core-team-grid">
           {
-            alumni["2025"].map((alumnus) => (
+            alumni2025.map((alumnus) => (
               <div class="member-card mini card">
-                <div class="member-avatar mini">
+                {/* <div class="member-avatar mini">
                   <img
                     src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
                     alt="Core Member"
                   />
-                </div>
+                </div> */}
                 <div class="member-info">
                   <h5>{alumnus.name}</h5>
-                  {alumnus.isLeadRole && (
+                  {alumnus.isLeadRole ? (
                     <p class="member-role">{alumnus.leadRole}</p>
+                  ) : (
+                    <br />
                   )}
                   <p class="member-role">{alumnus.department}</p>
                 </div>
@@ -53,6 +59,7 @@ import alumni from "../data/alumni.json";
           }
         </div>
 
+        <!-- Batch 2024 -->
         <br />
         <br />
         <div class="section-header">
@@ -60,18 +67,80 @@ import alumni from "../data/alumni.json";
         </div>
         <div class="core-team-grid">
           {
-            alumni["2024"].map((alumnus) => (
+            alumni2024.map((alumnus) => (
               <div class="member-card mini card">
-                <div class="member-avatar mini">
+                {/* <div class="member-avatar mini">
                   <img
                     src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
                     alt="Core Member"
                   />
-                </div>
+                </div> */}
                 <div class="member-info">
                   <h5>{alumnus.name}</h5>
-                  {alumnus.isLeadRole && (
+                  {alumnus.isLeadRole ? (
                     <p class="member-role">{alumnus.leadRole}</p>
+                  ) : (
+                    <br />
+                  )}
+                  <p class="member-role">{alumnus.department}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- Batch 2023 -->
+        <br />
+        <br />
+        <div class="section-header">
+          <h2 class="section-title">Batch 2023</h2>
+        </div>
+        <div class="core-team-grid">
+          {
+            alumni2023.map((alumnus) => (
+              <div class="member-card mini card">
+                {/* <div class="member-avatar mini">
+                  <img
+                    src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                    alt="Core Member"
+                  />
+                </div> */}
+                <div class="member-info">
+                  <h5>{alumnus.name}</h5>
+                  {alumnus.isLeadRole ? (
+                    <p class="member-role">{alumnus.leadRole}</p>
+                  ) : (
+                    <br />
+                  )}
+                  <p class="member-role">{alumnus.department}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- Batch 2022 -->
+        <br />
+        <br />
+        <div class="section-header">
+          <h2 class="section-title">Batch 2022</h2>
+        </div>
+        <div class="core-team-grid">
+          {
+            alumni2022.map((alumnus) => (
+              <div class="member-card mini card">
+                {/* <div class="member-avatar mini">
+                  <img
+                    src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                    alt="Core Member"
+                  />
+                </div> */}
+                <div class="member-info">
+                  <h5>{alumnus.name}</h5>
+                  {alumnus.isLeadRole ? (
+                    <p class="member-role">{alumnus.leadRole}</p>
+                  ) : (
+                    <br />
                   )}
                   <p class="member-role">{alumnus.department}</p>
                 </div>

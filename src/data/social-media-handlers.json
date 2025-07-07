@@ -4,20 +4,20 @@
         "socialName": "LinkedIn",
         "collegeYrDept": "Final Yr. CSE",
         "description": "Organizing and managing all club events and workshops.",
-        "imageUrl": ""
+        "imageUrl": "/pawan-raj-singh.jpg"
     },
     {
         "name": "Mouli Sarkar",
         "socialName": "Instagram",
         "collegeYrDept": "Final Yr. IT",
         "description": "Organizing and managing all club events and workshops.",
-        "imageUrl": ""
+        "imageUrl": "/mouli-sarkar.jpg"
     },
     {
         "name": "Supriyo Gorai",
         "socialName": "Facebook",
         "collegeYrDept": "Final Yr. IT",
         "description": "Organizing and managing all club events and workshops.",
-        "imageUrl": ""
+        "imageUrl": "/supriyo-gorai.jpg"
     }
 ]
