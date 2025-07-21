@@ -831,6 +831,8 @@ import Footer from "../components/Footer.astro";
         year,
         subject,
         message,
+        isSeen: false,
+        isArchived: false,
       })
         .then(() => {
           alert("Thank you for your message! We'll get back to you soon.");
